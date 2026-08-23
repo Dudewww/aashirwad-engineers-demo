@@ -6,15 +6,15 @@ import { products } from "@/lib/products";
 export const metadata: Metadata = {
   title: "About Us | Aashirwad Engineers | Machinery Manufacturer",
   description:
-    "Aashirwad Engineers manufactures specialized machinery for raffia tape, HDPE tape, and woven sack conversion. Founded in 2003, 200+ machines delivered, in-house engineering from Mumbai.",
+    "Aashirwad Engineers manufactures specialized machinery for raffia tape, HDPE tape, and woven sack conversion. Founded in 2003, 200+ machines delivered, in-house engineering and manufacturing.",
   alternates: { canonical: "/about" },
   openGraph: {
     siteName: "Aashirwad Engineers",
     locale: "en_IN",
     type: "website",
-    title: "About Aashirwad Engineers | Mumbai-based Machinery Manufacturer",
+    title: "About Aashirwad Engineers | Machinery Manufacturer",
     description:
-      "Aashirwad Engineers manufactures specialized machinery for raffia tape, HDPE tape, and woven sack conversion. Founded in 2003, 200+ machines delivered, in-house engineering from Mumbai.",
+      "Aashirwad Engineers manufactures specialized machinery for raffia tape, HDPE tape, and woven sack conversion. Founded in 2003, 200+ machines delivered, in-house engineering and manufacturing.",
     url: "/about",
     images: [{ url: "/products/hot-air-oven-v2-cropped-10.png", alt: "Aashirwad Engineers — About our engineering team" }],
   },
@@ -34,11 +34,11 @@ const breadcrumbSchema = {
 const companyFaqs = [
   {
     question: "When was Aashirwad Engineers founded?",
-    answer: "Aashirwad Engineers was founded in 2003 in Mumbai, Maharashtra. The company has over two decades of experience manufacturing industrial machinery for raffia tape, HDPE tape, woven sack, and plastic processing industries.",
+    answer: "Aashirwad Engineers was founded in 2003. The company has over two decades of experience manufacturing industrial machinery for raffia tape, HDPE tape, woven sack, and plastic processing industries.",
   },
   {
-    question: "Where is Aashirwad Engineers located?",
-    answer: "Aashirwad Engineers is located at B1/201, Manek Apartment, Near Vidyamandir School, Chatrapati Shivaji Marg, Dahisar East, Mumbai-400068, Maharashtra, India. The facility handles engineering, assembly, and pre-dispatch testing.",
+    question: "How are machines engineered and manufactured at Aashirwad Engineers?",
+    answer: "Every machine undergoes in-house mechanical layout design, electrical panel fabrication, thermal system integration, and pre-dispatch testing at our dedicated manufacturing facility under direct engineering supervision.",
   },
   {
     question: "How many machines has Aashirwad Engineers delivered?",
@@ -82,7 +82,7 @@ const faqSchema = {
 const highlights = [
   {
     label: "Foundation & Experience",
-    detail: "Established in 2003 in Mumbai, Maharashtra. Over two decades of continuous machinery manufacturing for India's raffia tape and woven sack industries.",
+    detail: "Established in 2003. Over two decades of continuous machinery manufacturing for the raffia tape and woven sack industries.",
   },
   {
     label: "Track Record",
@@ -125,7 +125,7 @@ export default function AboutPage() {
             Engineering Industrial Machinery Since 2003
           </h1>
           <p className="ae-desc-dark mt-5 max-w-[72ch]">
-            Aashirwad Engineers is a Mumbai-based industrial machinery manufacturer founded in 2003. We design,
+            Aashirwad Engineers is an industrial machinery manufacturer founded in 2003. We design,
             engineer, and assemble specialized equipment for the raffia tape, HDPE tape, woven sack, and plastic
             processing industries. With over 200 machines delivered to domestic and export markets, we focus on thermal
             consistency, mechanical durability, and predictable output on the plant floor.
@@ -153,7 +153,7 @@ export default function AboutPage() {
             <div>
               <p className="font-semibold text-navy-900">In-House Engineering & Assembly</p>
               <p className="mt-2">
-                Every machine is engineered, fabricated, and integrated at our Umbergaon facility under direct production
+                Every machine is engineered, fabricated, and integrated at our manufacturing facility under direct production
                 supervision. We control the full manufacturing chain: mechanical layout, electrical panel build, thermal
                 system integration, and final assembly. This ensures consistent fabrication standards and accountability
                 from design through delivery.

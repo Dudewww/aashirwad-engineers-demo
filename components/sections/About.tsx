@@ -47,7 +47,7 @@ export function About() {
         <Reveal delay={REVEAL_COLUMN_OFFSET} className="flex flex-col justify-center">
           <p className="ae-eyebrow-light">About Aashirwad Engineers</p>
           <h2 className="ae-h2 mt-4 max-w-[22ch] text-navy-900">
-            Engineering Machinery Built for India&apos;s Most Demanding Production Environments
+            Engineering Machinery Built for Demanding Industrial Production Environments
           </h2>
           <p className="ae-desc-on-light mt-6">
             Our ovens maintain tight temperature uniformity across the full tape width—because inconsistent heat

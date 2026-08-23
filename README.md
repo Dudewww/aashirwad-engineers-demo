@@ -1,6 +1,6 @@
 # Aashirwad Engineers — Industrial Machinery Website
 
-A modern, responsive, and performance-optimized web platform for **Aashirwad Engineers**, an industrial machinery manufacturer based in Mumbai, India. The website showcases their specialized machinery catalog for HDPE/PP woven sack manufacturing, raffia tape extrusion, plastic processing, and industrial packaging plants.
+A modern, responsive, and performance-optimized web platform for **Aashirwad Engineers**, an industrial machinery manufacturer. The website showcases their specialized machinery catalog for HDPE/PP woven sack manufacturing, raffia tape extrusion, plastic processing, and industrial packaging plants.
 
 ---
 
@@ -44,17 +44,16 @@ The platform serves as the primary digital catalog, technical specification refe
 ```text
 ├── app/                        # Next.js App Router (Pages & Metadata)
 │   ├── about/                  # About company & manufacturing heritage
-│   ├── contact/                # Contact channels, address & direct RFQ
+│   ├── contact/                # Contact channels & direct RFQ
 │   ├── industries/             # Industry applications & sector analysis
 │   ├── manufacturing/          # In-house manufacturing & quality standards
-│   ├── privacy/                # Privacy policy & compliance
 │   ├── products/               # Product catalog & dynamic [slug] detail pages
 │   ├── why-choose-us/          # Engineering advantages & differentiators
 │   ├── globals.css             # Global Tailwind stylesheets & custom tokens
 │   ├── layout.tsx              # Root HTML layout with Navigation & Footer
 │   ├── page.tsx                # Homepage featuring interactive machinery hero
-│   ├── robots.txt/route.ts     # Automated search engine robots directives
-│   └── sitemap.xml/route.ts    # Dynamic multi-page XML sitemap generator
+│   ├── robots.ts               # Automated search engine robots directives
+│   └── sitemap.ts              # Dynamic multi-page XML sitemap generator
 ├── components/                 # Reusable React components
 │   ├── layout/                 # Navigation, Header, Footer, WhatsApp Floating Action Button
 │   ├── products/               # Product cards, detail views, and spec tables
@@ -66,7 +65,7 @@ The platform serves as the primary digital catalog, technical specification refe
 │   ├── motion-presets.ts       # Centralized Motion animation curves & variants
 │   ├── product-faqs.ts         # Technical FAQ dataset
 │   ├── products.ts             # Machinery catalog data & technical specs
-│   └── site.ts                 # Centralized contact info, hours, and geo coordinates
+│   └── site.ts                 # Centralized contact info and business hours
 ├── public/                     # Static assets (images, icons, industry photos)
 │   ├── industries/             # Sector application photography
 │   └── products/               # High-resolution machinery renders
@@ -129,15 +128,13 @@ The project is configured for deployment on any standard Node.js server or stati
 
 ---
 
-## 📞 Contact Information
+## 📞 Demo Contact Information
 
-**Aashirwad Engineers**  
-Industrial Machinery Manufacturer  
-- **Phone**: [+91 9173396386](tel:+919173396386)
-- **WhatsApp**: [+91 9173396386](https://wa.me/919173396386)
-- **Email**: [rajpurarushabh@gmail.com](mailto:rajpurarushabh@gmail.com)
-- **Address**: B1/201, Manek Apartment, Near Vidyamandir School, Chatrapati Shivaji Marg, Dahisar East, Mumbai - 400068, Maharashtra, India.
-- **Operating Hours**: Mon – Sat, 9:00 AM – 6:00 PM IST
+**Aashirwad Engineers (Demo Portal)**
+- **Phone**: [+91 90000 00000](tel:+919000000000)
+- **WhatsApp**: [+91 90000 00000](https://wa.me/919000000000)
+- **Email**: [demo@example.com](mailto:demo@example.com)
+- **Operating Hours**: Mon – Sat, 9:00 AM – 6:00 PM
 
 ---
 

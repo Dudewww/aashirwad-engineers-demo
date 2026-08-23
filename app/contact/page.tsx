@@ -21,8 +21,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=19.255167,72.861500`;
-
   const whatsappUrl = `https://wa.me/${siteContact.whatsappRaw}?text=${encodeURIComponent(
     siteContact.whatsappMessage,
   )}`;
@@ -36,41 +34,14 @@ export default function ContactPage() {
           Contact Our Technical Support & Sales
         </h1>
         <p className="ae-desc-dark mt-5 max-w-[64ch]">
-          Have questions about our industrial ovens, cutting systems, or customized machinery configurations? Reach out direct to our Mumbai office or submit the secure form below.
+          Have questions about our industrial ovens, cutting systems, or customized machinery configurations? Reach out directly to our technical team or submit the inquiry form below.
         </p>
       </section>
 
-      {/* Professional Contact Cards */}
+      {/* Professional Contact Cards (3 Columns) */}
       <section className="ae-container mb-16">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           
-          {/* Office Address Card */}
-          <div className="border border-steel-200 bg-section-light p-6 rounded-[2px] flex flex-col justify-between h-full shadow-el1">
-            <div>
-              <div className="flex items-center gap-3 text-brand-red mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                </svg>
-                <h3 className="font-heading font-bold text-navy-900 text-sm uppercase tracking-wide">Office Address</h3>
-              </div>
-              <p className="text-sm text-steel-600 leading-relaxed whitespace-pre-line font-medium mb-6">
-                {siteContact.address}
-              </p>
-            </div>
-            <a
-              href={directionsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ae-focus inline-flex items-center justify-center gap-1.5 w-full bg-navy-900 hover:bg-navy-800 text-white py-2.5 text-xs font-semibold uppercase tracking-wider rounded-[2px] transition-colors mt-auto"
-            >
-              <span>Get Directions</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3 h-3">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-              </svg>
-            </a>
-          </div>
-
           {/* Phone Card */}
           <div className="border border-steel-200 bg-section-light p-6 rounded-[2px] flex flex-col justify-between h-full shadow-el1">
             <div>
@@ -139,62 +110,16 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Google Maps & Dynamic Form Section */}
-      <section className="ae-container grid gap-12 lg:grid-cols-2 lg:items-start">
-        
-        {/* Left Column: Google Maps */}
-        <div className="space-y-6">
-          <div>
-            <h2 className="font-heading text-xl font-bold text-navy-900">Google Maps Office Location</h2>
-            <p className="text-sm text-steel-600 mt-2 leading-relaxed">
-              Find us at Manek Apartment in Dahisar East. Click the map markers to view coordinates or get transit directions from your current location.
-            </p>
-          </div>
-          
-          <div className="border border-steel-200 bg-white p-2 shadow-el2 rounded-[2px]">
-            <iframe
-              src="https://maps.google.com/maps?q=19.255167,72.861500&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="380"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Aashirwad Engineers Location Map"
-              className="w-full h-[320px] sm:h-[380px] rounded-[2px]"
-            ></iframe>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-t border-steel-200 pt-4">
-            <div>
-              <p className="text-xs font-semibold text-navy-900 uppercase font-mono tracking-wider">Address Verification</p>
-              <p className="text-xs text-steel-500 mt-1">{siteContact.addressShort}</p>
-            </div>
-            <a
-              href={directionsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ae-focus inline-flex items-center gap-1.5 rounded-sm text-sm font-semibold text-brand-red transition-colors hover:text-brand-redHover shrink-0"
-            >
-              <span>Open in Google Maps</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-              </svg>
-            </a>
-          </div>
+      {/* Dynamic Form Section */}
+      <section className="ae-container max-w-4xl mx-auto scroll-mt-24 sm:scroll-mt-28 lg:scroll-mt-32" id="inquiry-form">
+        <div className="mb-8 text-center sm:text-left">
+          <p className="ae-eyebrow-dark">Inquiry Form</p>
+          <h2 className="ae-h2 mt-3 text-navy-900">Send an Online Inquiry</h2>
+          <p className="ae-desc-dark mt-3 max-w-[64ch]">
+            Use our interactive form to select your reason for contact. General inquiries and RFQs are immediately routed to our engineers.
+          </p>
         </div>
-
-        {/* Right Column: Secure Dynamic Form */}
-        <div className="space-y-6 scroll-mt-24 sm:scroll-mt-28 lg:scroll-mt-32" id="inquiry-form">
-          <div>
-            <h2 className="font-heading text-xl font-bold text-navy-900">Send an Online Inquiry</h2>
-            <p className="text-sm text-steel-600 mt-2 leading-relaxed">
-              Use our interactive form to select your reason for contact. General inquiries and RFQs are immediately routed to our engineers.
-            </p>
-          </div>
-          <DynamicInquiryForm />
-        </div>
-
+        <DynamicInquiryForm />
       </section>
     </div>
   );

@@ -16,7 +16,7 @@ export function Certifications() {
         </Reveal>
 
         <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
-          {["Made in India", "MSME", "ISO", "Industry Association"].map((label, idx) => (
+          {["Industrial Quality", "MSME", "ISO", "Industry Association"].map((label, idx) => (
             <Reveal key={label} delay={revealStagger(idx)}>
               <div className="flex min-h-[92px] cursor-default items-center justify-center border border-steel-600/25 bg-section-light px-4 py-6 text-center transition-[filter] duration-300 hover:grayscale-0 grayscale">
                 <span className="text-xs font-semibold uppercase tracking-[0.12em] text-steel-600">{label}</span>

@@ -25,7 +25,7 @@ export async function generateMetadata({
     .map(([k, v]) => `${k}: ${v}`)
     .join(". ");
 
-  const description = `${product.short} ${specSummary}. Factory-direct pricing from Aashirwad Engineers, Mumbai.`;
+  const description = `${product.short} ${specSummary}. Factory-direct pricing from Aashirwad Engineers.`;
 
   return {
     title: `${product.name} — Specifications & Inquiry | Aashirwad Engineers`,

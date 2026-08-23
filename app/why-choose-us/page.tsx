@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Why Choose Us | Machinery Manufacturers in Mumbai | Aashirwad Engineers",
+  title: "Why Choose Us | Machinery Manufacturers | Aashirwad Engineers",
   description:
-    "Why choose Aashirwad Engineers for industrial machinery: in-house engineering, 200+ machines delivered, custom configurations, pre-dispatch testing, and after-sales support from Mumbai since 2003.",
+    "Why choose Aashirwad Engineers for industrial machinery: in-house engineering, 200+ machines delivered, custom configurations, pre-dispatch testing, and after-sales support since 2003.",
   alternates: { canonical: "/why-choose-us" },
   openGraph: {
     siteName: "Aashirwad Engineers",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Why Choose Aashirwad Engineers | Industrial Machinery Experts",
     description:
-      "Why choose Aashirwad Engineers for industrial machinery: in-house engineering, 200+ machines delivered, custom configurations, pre-dispatch testing, and after-sales support from Mumbai since 2003.",
+      "Why choose Aashirwad Engineers for industrial machinery: in-house engineering, 200+ machines delivered, custom configurations, pre-dispatch testing, and after-sales support since 2003.",
     url: "/why-choose-us",
     images: [{ url: "/products/hot-air-oven-v2-cropped-10.png", alt: "Aashirwad Engineers — Why choose us" }],
   },
@@ -33,12 +33,12 @@ const differentiators = [
   {
     label: "In-House Engineering",
     title: "Full manufacturing control from design to dispatch",
-    body: "Every machine is engineered, fabricated, and assembled at our Mumbai facility under direct production supervision. We control the complete manufacturing chain — mechanical layout, electrical panel build, thermal system integration, and final assembly. This means consistent build quality, faster issue resolution, and direct accountability for every machine that leaves our facility. There are no outsourced assemblies or third-party black boxes in our machines.",
+    body: "Every machine is engineered, fabricated, and assembled at our manufacturing facility under direct production supervision. We control the complete manufacturing chain — mechanical layout, electrical panel build, thermal system integration, and final assembly. This means consistent build quality, faster issue resolution, and direct accountability for every machine that leaves our facility. There are no outsourced assemblies or third-party black boxes in our machines.",
   },
   {
     label: "200+ Machines Delivered",
     title: "Proven track record across domestic and export markets",
-    body: "Since 2003, we have delivered over 200 machines to raffia tape manufacturers, HDPE tape producers, woven sack converters, plastic processors, and industrial packaging companies. Our machines are running on production floors across India and in export markets, validated by years of continuous industrial duty. This installation base means proven reliability — not prototype performance.",
+    body: "Since 2003, we have delivered over 200 machines to raffia tape manufacturers, HDPE tape producers, woven sack converters, plastic processors, and industrial packaging companies. Our machines are running on production floors across domestic and export markets, validated by years of continuous industrial duty. This installation base means proven reliability — not prototype performance.",
   },
   {
     label: "Custom Configurations",
@@ -80,7 +80,7 @@ const faqSchema = {
       name: "Why should I choose Aashirwad Engineers over other machinery manufacturers?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Aashirwad Engineers offers full in-house engineering and assembly from their Mumbai facility, with over 200 machines delivered since 2003. Every machine is pre-dispatch tested, custom-configured for your production line, and backed by direct after-sales technical support from the engineers who built it. The specialization in raffia tape, HDPE tape, and woven sack industries means deep application knowledge that general-purpose machinery companies lack.",
+        text: "Aashirwad Engineers offers full in-house engineering and assembly from their manufacturing facility, with over 200 machines delivered since 2003. Every machine is pre-dispatch tested, custom-configured for your production line, and backed by direct after-sales technical support from the engineers who built it. The specialization in raffia tape, HDPE tape, and woven sack industries means deep application knowledge that general-purpose machinery companies lack.",
       },
     },
     {

@@ -31,7 +31,7 @@ The Aashirwad Engineers digital experience is built on a foundation of **Industr
 | **IMG-07** | Industry Cards     | Home          | Industry context (5 Industries)       | Existing (Placeholder) | WEBP   | L2 (High)     |
 | **IMG-08** | Manufacturing Hero | Manufacturing | Facility Overview (Parallax)          | Existing (Placeholder) | WEBP   | L2 (High)     |
 | **IMG-09** | Manufacturing Shot | Manufacturing | Facility, Assembly, Quality (3 Shots) | Existing (Placeholder) | WEBP   | L3 (Med)      |
-| **IMG-10** | Certification      | Home          | Made in India, ISO, MSME Logos        | **MISSING**            | SVG    | L3 (Med)      |
+| **IMG-10** | Certification      | Home          | Quality, ISO, MSME Logos               | **MISSING**            | SVG    | L3 (Med)      |
 
 ---
 
@@ -137,4 +137,4 @@ The project uses a **Dynamic Object-Fit** system:
 1.  **Immediate Task:** Replace all Unsplash URLs in `lib/industries.ts` and `components/sections/About.tsx` with local assets.
 2.  **Missing Assets:** Commission/Render "Alternate Angle" shots for all 5 Tier 1 products to enable the hover-flip feature.
 3.  **Consistency Check:** Ensure all 11 product PNGs share the same lighting direction (Top-Left) to prevent visual jarring in the grid.
-4.  **Logo Assets:** Create high-quality SVG versions of MSME, ISO, and "Made in India" badges for the `Certifications` section.
+4.  **Logo Assets:** Create high-quality SVG versions of MSME, ISO, and Quality certification badges for the `Certifications` trust strip.

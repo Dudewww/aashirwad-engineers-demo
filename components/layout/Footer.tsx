@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react/dist/ssr";
+import { EnvelopeSimple, Phone } from "@phosphor-icons/react/dist/ssr";
 import { siteContact } from "@/lib/site";
 
 const quick = [
@@ -69,10 +69,6 @@ export function Footer() {
             <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-red">Contact</p>
             <div className="mt-5 space-y-4 text-sm text-steel-600">
               <div className="flex gap-3 items-start">
-                <MapPin className="h-5 w-5 shrink-0 text-brand-red mt-0.5" />
-                <p className="whitespace-pre-line leading-relaxed">{siteContact.address}</p>
-              </div>
-              <div className="flex gap-3 items-start">
                 <Phone className="h-5 w-5 shrink-0 text-brand-red mt-0.5" />
                 <a href={`tel:${siteContact.phoneRaw}`} className="hover:text-brand-red transition-colors font-mono">
                   {siteContact.phone}
@@ -91,9 +87,6 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-3 border-t border-steel-200 pt-8 text-xs text-steel-400 md:flex-row md:items-center md:justify-between">
           <p>&copy; {new Date().getFullYear()} Aashirwad Engineers. All rights reserved.</p>
-          <Link className="ae-focus rounded-sm hover:text-brand-red" href="/privacy">
-            Privacy Policy
-          </Link>
         </div>
       </div>
     </footer>

@@ -27,7 +27,7 @@ export const productFaqs: Record<string, ProductFAQ[]> = {
     },
     {
       question: "Does Aashirwad Engineers test the hot air oven before delivery?",
-      answer: "Yes. Every hot air oven is assembled and tested at the Aashirwad Engineers facility in Mumbai. Pre-delivery quality checks include thermal uniformity verification, control system calibration, blower performance testing, and safety interlock validation.",
+      answer: "Yes. Every hot air oven is assembled and tested at the Aashirwad Engineers manufacturing facility. Pre-delivery quality checks include thermal uniformity verification, control system calibration, blower performance testing, and safety interlock validation.",
     },
   ],
 
@@ -135,7 +135,7 @@ export const productFaqs: Record<string, ProductFAQ[]> = {
     },
     {
       question: "Does Aashirwad Engineers test the hydraulic system before delivery?",
-      answer: "Yes. Each bale press is manufactured at the Aashirwad Engineers Mumbai facility with in-house hydraulic assembly and pressure testing completed before dispatch. This ensures reliable hydraulic performance from the first operating cycle.",
+      answer: "Yes. Each bale press is manufactured at the Aashirwad Engineers manufacturing facility with in-house hydraulic assembly and pressure testing completed before dispatch. This ensures reliable hydraulic performance from the first operating cycle.",
     },
   ],
 
@@ -227,7 +227,7 @@ export const productFaqs: Record<string, ProductFAQ[]> = {
     },
     {
       question: "Is the device compatible with standard raffia looms?",
-      answer: "Yes. The device is compatible with standard raffia looms and converting equipment commonly used in Indian woven sack manufacturing plants. Contact Aashirwad Engineers to confirm compatibility with your specific equipment.",
+      answer: "Yes. The device is compatible with standard raffia looms and converting equipment commonly used in woven sack manufacturing plants. Contact Aashirwad Engineers to confirm compatibility with your specific equipment.",
     },
   ],
 

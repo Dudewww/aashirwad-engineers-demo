@@ -54,7 +54,7 @@ const schemaJson = {
       "name": "Aashirwad Engineers",
       "url": "https://aashirwadengineers.com",
       "logo": "https://aashirwadengineers.com/icon.svg",
-      "description": "Aashirwad Engineers is a Mumbai-based industrial machinery manufacturer specializing in hot air ovens, cutting and stitching machines, gusset systems, turbo mixers, bale presses, and fabric handling equipment for raffia tape, HDPE tape, woven sack, and plastic processing industries. Founded in 2003 with over 200 machines delivered.",
+      "description": "Aashirwad Engineers is an industrial machinery manufacturer specializing in hot air ovens, cutting and stitching machines, gusset systems, turbo mixers, bale presses, and fabric handling equipment for raffia tape, HDPE tape, woven sack, and plastic processing industries. Founded in 2003 with over 200 machines delivered.",
       "foundingDate": "2003",
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
@@ -64,47 +64,10 @@ const schemaJson = {
       "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-91733-96386",
+        "telephone": "+91-90000-00000",
         "contactType": "customer service",
-        "email": "rajpurarushabh@gmail.com",
+        "email": "demo@example.com",
         "availableLanguage": ["English", "Hindi"]
-      }
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": `${SITE_URL}/#localbusiness`,
-      "name": "Aashirwad Engineers",
-      "description": "Industrial machinery manufacturer for raffia tape, HDPE tape, woven sack, and plastic processing industries. In-house engineering, assembly, and pre-dispatch testing from Mumbai.",
-      "image": `${SITE_URL}/products/hot-air-oven-v2-cropped-10.png`,
-      "telephone": "+91-91733-96386",
-      "email": "rajpurarushabh@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "B1/201, Manek Apartment, Near Vidyamandir School, Chatrapati Shivaji Marg, Dahisar East",
-        "addressLocality": "Mumbai",
-        "addressRegion": "Maharashtra",
-        "postalCode": "400068",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 19.255167,
-        "longitude": 72.861500
-      },
-      "url": SITE_URL,
-      "priceRange": "$$",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
       }
     }
   ]
