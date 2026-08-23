@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-900: #111827;
+  --navy-800: #1f2937;
+  --navy-700: #374151;
+  --steel-600: #4b5563;
+  --steel-400: #6b7280;
+  --steel-200: #e5e7eb;
+  --silver-100: #d1d5db;
+  --red-500: #e31e24;
+  --red-600: #c91c21;
+  --accent-primary: #e31e24;
+  --section-light: #f8f9fa;
+  --section-mid: #f3f4f6;
+  --bg-base-rgb: 248, 249, 250;
+  --font-mono: var(--font-data);
+  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-precision: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  @apply bg-white text-navy-900 font-body antialiased;
+  overflow-x: clip;
+}
+
+@layer components {
+  /* Layout shell — max width + horizontal padding (all major sections) */
+  .ae-container {
+    @apply mx-auto max-w-[1440px] px-6 sm:px-5 md:px-8 lg:px-12 xl:px-[80px];
+  }
+
+  .ae-section-y {
+    @apply py-16 sm:py-20 md:py-24 lg:py-28;
+  }
+
+  .ae-section-y-sub {
+    @apply py-14 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  .ae-eyebrow-dark {
+    @apply font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-red sm:text-xs sm:tracking-[0.22em];
+  }
+
+  .ae-eyebrow-light {
+    @apply font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-red sm:text-xs sm:tracking-[0.22em];
+  }
+
+  .ae-kicker-mono {
+    @apply font-mono text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-red;
+  }
+
+  .ae-h2 {
+    @apply font-heading text-[26px] font-bold leading-[1.08] tracking-[-0.02em] sm:text-[30px] md:text-h2;
+  }
+
+  .ae-desc-dark {
+    @apply max-w-[62ch] text-[15px] leading-relaxed text-steel-600 sm:text-base md:text-lg;
+  }
+
+  .ae-desc-on-light {
+    @apply max-w-readable text-[15px] leading-relaxed text-steel-600 sm:text-base md:text-lg;
+  }
+
+  /** Panel surfaces — foundation utility; adopt in later sprints */
+  .ae-surface-card {
+    @apply border border-steel-200 bg-white shadow-el1;
+  }
+
+  .ae-machine-media-frame {
+    @apply overflow-hidden;
+  }
+
+  .ae-machine-media-image {
+    @apply h-full w-full object-contain object-center;
+  }
+
+  .ae-divider {
+    @apply h-px bg-steel-200;
+  }
+
+  .ae-spec-chip {
+    @apply inline-flex max-w-full items-center break-words rounded-ae-sm border border-steel-200 bg-section-light px-2.5 py-1.5 font-mono text-[10px] leading-snug text-navy-900 sm:px-3 sm:text-[11px];
+  }
+
+  /** Keyboard focus — pair with interactive links/buttons outside shared Button */
+  .ae-focus {
+    @apply outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-red focus-visible:outline-offset-[3px];
+  }
+}
+
+::selection {
+  background: rgba(181, 53, 41, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+.texture-steel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(var(--bg-base-rgb), 0.98) 0%,
+    rgba(var(--bg-base-rgb), 0.88) 42%,
+    rgba(var(--bg-base-rgb), 0.56) 100%
+  );
+}
+
+.hero-gradient-mobile {
+  background: rgba(var(--bg-base-rgb), 0.94);
+}
+
+.tier1-scrim {
+  background: linear-gradient(
+    to top,
+    rgba(17, 24, 39, 0.1) 0%,
+    rgba(17, 24, 39, 0.04) 40%,
+    transparent 72%
+  );
+}
+
+.industry-scrim {
+  background: linear-gradient(
+    to top,
+    rgba(17, 24, 39, 0.72) 0%,
+    rgba(17, 24, 39, 0.28) 58%,
+    transparent 100%
+  );
+}
+
+.hero-product-stage {
+  background:
+    linear-gradient(180deg, rgba(248, 249, 250, 0.98), rgba(243, 244, 246, 0.98));
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 319px) {
+  .ae-container {
+    @apply px-3;
+  }
+}
+
+/* Remove decorative horizontal lines from all product cards */
+.h-px.bg-steel-600\/70,
+.h-px.bg-steel-600\/60 {
+  display: none !important;
+}
