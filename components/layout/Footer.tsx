@@ -86,7 +86,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-3 border-t border-steel-200 pt-8 text-xs text-steel-400 md:flex-row md:items-center md:justify-between">
-          <p>&copy; {new Date().getFullYear()} Aashirwad Engineers. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} &mdash; Aashirwad Engineers Demo</p>
         </div>
       </div>
     </footer>

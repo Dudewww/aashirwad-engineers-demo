@@ -140,4 +140,4 @@ The project is configured for deployment on any standard Node.js server or stati
 
 ## 📄 License
 
-Proprietary © Aashirwad Engineers. All rights reserved.
+© 2026 — Aashirwad Engineers Demo. Portfolio and demonstration showcase.
